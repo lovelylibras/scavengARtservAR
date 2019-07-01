@@ -1,10 +1,9 @@
 {
-  "name": "scavengARtservAR",
+  "name": "scavengartservar",
   "version": "1.0.0",
-  "description": "scavengARt server",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -14,6 +13,5 @@
     "express": "^4.17.1",
     "pg": "^7.11.0",
     "sequelize": "^5.9.0"
-  },
-  "devDependencies": {}
+  }
 }
