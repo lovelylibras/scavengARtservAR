@@ -19,6 +19,7 @@ const seed = async () => {
       imageUrl:
         'https://collectionapi.metmuseum.org/api/collection/v1/iiif/12127/33591/restricted',
       museum: 'Metropolitan Museum of Art',
+      description: 'Madame X description here',
       huntId: metropolitanHunt.id,
     },
     {
@@ -27,6 +28,7 @@ const seed = async () => {
       imageUrl:
         'https://collectionapi.metmuseum.org/api/collection/v1/iiif/436532/1671316/main-image',
       museum: 'Metropolitan Museum of Art',
+      description: 'Theo van Gogh description here',
       huntId: metropolitanHunt.id,
     },
     {
@@ -35,6 +37,7 @@ const seed = async () => {
       imageUrl:
         'https://collectionapi.metmuseum.org/api/collection/v1/iiif/438158/799953/main-image',
       museum: 'Metropolitan Museum of Art',
+      description: 'Springtime description here',
       huntId: metropolitanHunt.id,
     },
   ];

@@ -21,6 +21,9 @@ const Paintings = db.define('painting', {
     defaultValue:
       'https://static.dezeen.com/uploads/2016/02/new-metropolitan-art-museum-logo-wolff-olins_dezeen_1568_0.jpg',
   },
+  description: {
+    type: Sequelize.TEXT,
+  },
   museum: {
     type: Sequelize.STRING,
     allowNull: false,
