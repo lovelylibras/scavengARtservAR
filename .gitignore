@@ -1,0 +1,3 @@
+node_modules
+DS_Store (desktop resources - the way your folders are formatted, etc.)
+*.log (any log files)
