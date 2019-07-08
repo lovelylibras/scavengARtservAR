@@ -10,10 +10,10 @@ const Museums = db.define('museum', {
     },
   },
   lat: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.DOUBLE,
   },
   lng: {
-    type: Sequelize.INTEGER,
+    type: Sequelize.DOUBLE,
   },
 });
 

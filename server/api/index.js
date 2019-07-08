@@ -8,6 +8,7 @@ router.use('/games', require('./gamesRoutes'));
 router.use('/classrooms', require('./classroomRoutes'));
 router.use('/students', require('./studentsRoutes'));
 router.use('/teachers', require('./teachersRoutes'));
+router.use('/museums', require('./museumsRoutes'));
 
 router.use((req, res, next) => {
   const err = new Error('API route not found!');
