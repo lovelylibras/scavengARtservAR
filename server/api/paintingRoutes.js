@@ -19,11 +19,10 @@ router.get('/:paintingId', async (req, res, next) => {
   try {
     const selectedPainting = await Paintings.findByPk(req.params.paintingId, {
       include: {
-        model: Museums,
+        model: Hunts,
       },
     });
     if (selectedPainting) {
-      console.log(selectedPainting.__proto__);
       res.status(200).send(selectedPainting);
     } else {
       next();
