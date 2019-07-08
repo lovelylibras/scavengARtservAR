@@ -8,9 +8,12 @@ const Students = require('./models/students');
 const Classrooms = require('./models/classrooms');
 const Games = require('./models/games');
 const studentGames = require('./models/studentGames');
+const Museums = require('./models/museums');
 
-Paintings.belongsTo(Hunts);
-Hunts.hasMany(Paintings);
+Paintings.belongsTo(Museums);
+Paintings.belongsToMany(Hunts, { through: 'hunts-paintings' });
+
+Hunts.belongsTo(Museums);
 
 Students.belongsToMany(Classrooms, { through: 'students-classrooms' });
 Teachers.hasMany(Classrooms);
