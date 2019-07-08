@@ -4,8 +4,7 @@ const {
   Paintings,
   Teachers,
   Students,
-  Games,
-  Classrooms,
+  Museums,
 } = require('./server/db');
 const { green, red } = require('chalk');
 
@@ -27,6 +26,23 @@ const seed = async () => {
     description: 'Learn about the Whitney Museum of American Art',
   });
 
+  const museums = [
+    {
+      name: 'The Metropolitan Museum of Art',
+      lat: 40.780081,
+      lng: -73.963343,
+    },
+    {
+      name: 'The Museum of Modern Art',
+      lat: 40.762139,
+      lng: -73.977559,
+    },
+    {
+      name: 'The Whitney Museum of American Art',
+      lat: 40.739823,
+      lng: -74.008831,
+    },
+  ];
   const paintings = [
     {
       name: 'Madame X',
@@ -228,6 +244,9 @@ const seed = async () => {
   await Promise.all(
     paintings.map(painting => {
       return Paintings.create(painting);
+    }),
+    museums.map(museum => {
+      return Museums.create(museum);
     }),
     students.map(student => {
       return Students.create(student);
