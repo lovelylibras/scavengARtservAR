@@ -32,7 +32,6 @@ router.get('/:teacherId', async (req, res, next) => {
 router.post('/:teacherId', async (req, res, next) => {
   try {
     const newClassroom = await Classrooms.create(req.body);
-    console.log('stuff on newClassroom', newClassroom.__proto__);
     newClassroom.setTeacher(req.params.teacherId);
     res.status(201).send(newClassroom);
   } catch (error) {
