@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Paintings = require('../db/models/paintings');
+const { Paintings, Museums } = require('../db');
 const Hunts = require('../db/models/hunts');
 
 router.get('/', async (req, res, next) => {
