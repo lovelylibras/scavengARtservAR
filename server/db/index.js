@@ -10,8 +10,8 @@ const Games = require('./models/games');
 const studentGames = require('./models/studentGames');
 const Museums = require('./models/museums');
 
-Paintings.belongsTo(Museums);
-Paintings.belongsToMany(Hunts, { through: 'hunts-paintings' });
+Paintings.belongsTo(Hunts);
+Hunts.hasMany(Paintings);
 
 Hunts.belongsTo(Museums);
 
@@ -35,4 +35,5 @@ module.exports = {
   Students,
   Classrooms,
   Games,
+  Museums,
 };

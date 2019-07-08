@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Paintings = require('../db/models/paintings');
+const { Paintings, Museums } = require('../db');
 const Hunts = require('../db/models/hunts');
 
 router.get('/', async (req, res, next) => {
@@ -19,10 +19,11 @@ router.get('/:paintingId', async (req, res, next) => {
   try {
     const selectedPainting = await Paintings.findByPk(req.params.paintingId, {
       include: {
-        model: Hunts,
+        model: Museums,
       },
     });
     if (selectedPainting) {
+      console.log(selectedPainting.__proto__);
       res.status(200).send(selectedPainting);
     } else {
       next();
