@@ -24,13 +24,6 @@ const Paintings = db.define('painting', {
   description: {
     type: Sequelize.TEXT,
   },
-  museum: {
-    type: Sequelize.STRING,
-    allowNull: false,
-    validate: {
-      notEmpty: true,
-    },
-  },
 });
 
 module.exports = Paintings;
