@@ -1,8 +1,13 @@
-const { db } = require('./server/db');
+const {
+  db,
+  Hunts,
+  Paintings,
+  Teachers,
+  Students,
+  Games,
+  Classrooms,
+} = require('./server/db');
 const { green, red } = require('chalk');
-
-const Hunts = require('./server/db/models/hunts');
-const Paintings = require('./server/db/models/paintings');
 
 const seed = async () => {
   await db.sync({ force: true });
@@ -29,7 +34,8 @@ const seed = async () => {
       imageUrl:
         'https://collectionapi.metmuseum.org/api/collection/v1/iiif/12127/33591/restricted',
       museum: 'Metropolitan Museum of Art',
-      description: 'Madame Pierre Gautreau (the Louisiana-born Virginie Amélie Avegno; 1859–1915) was known in Paris for her artful appearance. Sargent hoped to enhance his reputation by painting and exhibiting her portrait. Working without a commission but with his sitter’s complicity, he emphasized her daring personal style, showing the right strap of her gown slipping from her shoulder. At the Salon of 1884, the portrait received more ridicule than praise. Sargent repainted the shoulder strap and kept the work for over thirty years. When, eventually, he sold it to the Metropolitan, he commented, “I suppose it is the best thing I have done,” but asked that the Museum disguise the sitter’s name.',
+      description:
+        'Madame Pierre Gautreau (the Louisiana-born Virginie Amélie Avegno; 1859–1915) was known in Paris for her artful appearance. Sargent hoped to enhance his reputation by painting and exhibiting her portrait. Working without a commission but with his sitter’s complicity, he emphasized her daring personal style, showing the right strap of her gown slipping from her shoulder. At the Salon of 1884, the portrait received more ridicule than praise. Sargent repainted the shoulder strap and kept the work for over thirty years. When, eventually, he sold it to the Metropolitan, he commented, “I suppose it is the best thing I have done,” but asked that the Museum disguise the sitter’s name.',
       huntId: metropolitanHunt.id,
     },
     {
@@ -47,7 +53,8 @@ const seed = async () => {
       imageUrl:
         'https://collectionapi.metmuseum.org/api/collection/v1/iiif/438158/799953/main-image',
       museum: 'Metropolitan Museum of Art',
-      description: 'This flirtatious duo in classicizing dress, painted with notable technical finesse, reflects Cot’s allegiance to the academic style of his teachers, including Bouguereau and Cabanel. Exhibited at the Salon of 1873, the picture was Cot’s greatest success, widely admired and copied in engravings, fans, porcelains, and tapestries. Its first owner, hardware tycoon John Wolfe, awarded the work a prime spot in his Manhattan mansion, where visitors delighted in "this reveling pair of children, drunken with first love ... this Arcadian idyll, peppered with French spice." Wolfe’s cousin, Catharine Lorillard Wolfe, later commissioned a similar scene from Cot, The Storm, now also in the Metropolitan’s collection (87.15.134)',
+      description:
+        'This flirtatious duo in classicizing dress, painted with notable technical finesse, reflects Cot’s allegiance to the academic style of his teachers, including Bouguereau and Cabanel. Exhibited at the Salon of 1873, the picture was Cot’s greatest success, widely admired and copied in engravings, fans, porcelains, and tapestries. Its first owner, hardware tycoon John Wolfe, awarded the work a prime spot in his Manhattan mansion, where visitors delighted in "this reveling pair of children, drunken with first love ... this Arcadian idyll, peppered with French spice." Wolfe’s cousin, Catharine Lorillard Wolfe, later commissioned a similar scene from Cot, The Storm, now also in the Metropolitan’s collection (87.15.134)',
       huntId: metropolitanHunt.id,
     },
     {
@@ -56,7 +63,8 @@ const seed = async () => {
       imageUrl:
         'https://collectionapi.metmuseum.org/api/collection/v1/iiif/437127/796089/restricted',
       museum: 'Metropolitan Museum of Art',
-      description: 'In 1893, Monet, a passionate horticulturist, purchased land with a pond near his property in Giverny, intending to build something "for the pleasure of the eye and also for motifs to paint." The result was his water-lily garden. In 1899, he began a series of eighteen views of the wooden footbridge over the pond, completing twelve paintings, including the present one, that summer. The vertical format of the picture, unusual in this series, gives prominence to the water lilies and their reflections on the pond.',
+      description:
+        'In 1893, Monet, a passionate horticulturist, purchased land with a pond near his property in Giverny, intending to build something "for the pleasure of the eye and also for motifs to paint." The result was his water-lily garden. In 1899, he began a series of eighteen views of the wooden footbridge over the pond, completing twelve paintings, including the present one, that summer. The vertical format of the picture, unusual in this series, gives prominence to the water lilies and their reflections on the pond.',
       huntId: metropolitanHunt.id,
     },
     {
@@ -65,7 +73,8 @@ const seed = async () => {
       imageUrl:
         'https://collectionapi.metmuseum.org/api/collection/v1/iiif/438754/794829/main-image',
       museum: 'Metropolitan Museum of Art',
-      description: 'This lyrical work inaugurates the grand tradition in Italian art of envisioning the sacred figures of the Madonna and Child in terms appropriated from real life. The Christ Child gently pushes away the veil of his mother, whose sorrowful expression reflects her foreknowledge of his crucifixion. The beautifully modeled drapery enhances their three-dimensional, physical presence and the parapet connects the fictive, sacred world of the painting with the temporal one of the viewer. The bottom edge of the original frame is marked by candle burns.',
+      description:
+        'This lyrical work inaugurates the grand tradition in Italian art of envisioning the sacred figures of the Madonna and Child in terms appropriated from real life. The Christ Child gently pushes away the veil of his mother, whose sorrowful expression reflects her foreknowledge of his crucifixion. The beautifully modeled drapery enhances their three-dimensional, physical presence and the parapet connects the fictive, sacred world of the painting with the temporal one of the viewer. The bottom edge of the original frame is marked by candle burns.',
       huntId: metropolitanHunt.id,
     },
     {
@@ -170,10 +179,61 @@ const seed = async () => {
       huntId: whitneyHunt.id,
     },
   ];
+  const teachers = [
+    {
+      name: 'Jess Bracht',
+      userName: 'jess@GH.com',
+      password: '123',
+    },
+    {
+      name: 'Dan Sohval',
+      userName: 'dan@GH.com',
+      password: '123',
+    },
+  ];
+
+  const students = [
+    {
+      name: 'Rachel Reinauer',
+      userName: 'rayray',
+      password: '123',
+    },
+    {
+      name: 'Ahsun Kim',
+      userName: 'AK1',
+      password: '123',
+    },
+    {
+      name: 'Audra Kenney',
+      userName: 'AK2',
+      password: '123',
+    },
+    {
+      name: 'Talia Fayaz',
+      userName: 'Shirline',
+      password: '123',
+    },
+    {
+      name: 'Wei Ji',
+      userName: 'Weiwei',
+      password: '123',
+    },
+    {
+      name: 'Madeline Emde',
+      userName: 'MaddieEm',
+      password: '123',
+    },
+  ];
 
   await Promise.all(
     paintings.map(painting => {
       return Paintings.create(painting);
+    }),
+    students.map(student => {
+      return Students.create(student);
+    }),
+    teachers.map(teacher => {
+      return Teachers.create(teacher);
     })
   );
 
