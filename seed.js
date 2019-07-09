@@ -180,7 +180,7 @@ const seed = async () => {
       name: `Baptism in Kansas`,
       artist: 'John Steuart Curry',
       imageUrl:
-        'http://collectionimages.whitney.org/standard/167302/largepage.jpg',
+        'https://upload.wikimedia.org/wikipedia/commons/f/fd/31.159_curry_imageprimacy_800-676x548.jpg',
       museum: 'Whitney Museum of American Art',
       description: `Baptism in Kansas recalls a scene that John Steuart Curry witnessed in 1915 in the devout religious community of his childhood: the local creeks were dried up, and the only suitable site for a full-submersion baptism was a water tank. In the painting, the circle of pious hymn singers, the row of Ford Model-T cars, and the receding prairie provide a counterpoint to the dynamic postures of the preacher and young woman at the moment they begin her submersion. Hovering above the pair, and suggesting a divine presence, is a raven and a dove, the birds that Noah released from the ark after the Flood. When the painting was first exhibited in 1928 at the Corcoran Gallery in Washington, D.C., critics hailed its assertive portrayal of rural American values, which marked a departure from the urban imagery and abstracted landscapes of contemporary American modernism. Curry’s vision of an idealized American heartland signaled the emergence of Regionalism, the movement that glorified grassroots rural values during the poverty-stricken years of the Great Depression.`,
       huntId: whitneyHunt.id,
@@ -199,7 +199,7 @@ const seed = async () => {
       name: `Landscape`,
       artist: 'Yasuo Kuniyoshi',
       imageUrl:
-        'http://collectionimages.whitney.org/standard/160148/largepage.jpg',
+        'https://uploads1.wikiart.org/images/yasuo-kuniyoshi/landscape-1924.jpg!Large.jpg',
       museum: 'Whitney Museum of American Art',
       description: `During the 1920s, Yasuo Kuniyoshi painted landscape compositions based on the rugged coastal setting of Ogunquit, Maine, where he spent his summers. Like contemporaneous works of this period, Landscape portrays its subject from a low viewpoint; its dream-like composition is marked by odd relationships of scale, such as the oversize prominence of the leaves in the foreground. Like Marsden Hartley, John Marin, and other American artists of this era, Kuniyoshi used a semi-abstracted modernist language to mine the personal qualities of the American landscape, transforming it into a vehicle for conveying mood and emotion.`,
       huntId: whitneyHunt.id,
@@ -208,7 +208,7 @@ const seed = async () => {
       name: `Dam at Fort Peck, Montana`,
       artist: 'Margaret Bourke-White',
       imageUrl:
-        'http://collectionimages.whitney.org/standard/130237/largepage.jpg',
+        'https://www.artic.edu/iiif/2/869243bb-db2c-ebb8-bd8b-a4129977262c/full/1200,/0/default.jpg?w=1200&h=800&fit=crop',
       museum: 'Whitney Museum of American Art',
       description: `Margaret Bourke-White’s photograph Dam at Fort Peck was reproduced on the cover of the inaugural issue of Life, published on November 23, 1936. Publisher Henry Luce had sent Bourke-White, one of four photojournalists originally hired by the magazine, to shoot a chain of dams being constructed on the Missouri River in northeast Montana under the Public Works Administration agency of President Franklin D. Roosevelt’s New Deal. Fort Peck was the highest of these and the world’s largest earth-filled dam. Bourke-White’s image reveals her ability to impart grace and majesty to the bleak, utilitarian forms of industrial architecture. The dam’s massive concrete spillway piers, which stretch to the edges of the image, evoke the soaring walls of ancient monuments, or crenellated castle towers. Bourke-White’s close cropping has them reaching the clouds and dwarfing a pair of human subjects. Luce’s choice of this photograph for his first cover was both canny and strategic: Dam at Fort Peck embodies a machine-age optimism that was likely well-received by a country hobbled by the Great Depression.`,
       huntId: whitneyHunt.id,
