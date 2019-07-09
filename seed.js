@@ -29,18 +29,23 @@ const seed = async () => {
   const museums = [
     {
       name: 'The Metropolitan Museum of Art',
-      lat: 40.780081,
-      lng: -73.963343,
+      lat: 40.779453,
+      lng: -73.963243,
     },
     {
       name: 'The Museum of Modern Art',
-      lat: 40.762139,
-      lng: -73.977559,
+      lat: 40.761449,
+      lng: -73.977622,
     },
     {
       name: 'The Whitney Museum of American Art',
-      lat: 40.739823,
-      lng: -74.008831,
+      lat: 40.739602,
+      lng: -74.008864,
+    },
+    {
+      name: 'Fullstack Academy',
+      lat: 40.705135,
+      lng: -74.00916,
     },
   ];
   const paintings = [
