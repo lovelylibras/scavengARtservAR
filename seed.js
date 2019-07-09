@@ -189,7 +189,7 @@ const seed = async () => {
       name: `Marilyn Pursued by Death`,
       artist: 'Rosalyn Drexler',
       imageUrl:
-        'http://collectionimages.whitney.org/standard/236805/largepage.jpg',
+        'https://d7hftxdivxxvm.cloudfront.net/?resize_to=fit&width=525&height=640&quality=80&src=https%3A%2F%2Fd32dm0rphc51dk.cloudfront.net%2FrB8-Z6OII73R3TeLiVj9tg%2Flarge.jpg',
       museum: 'Whitney Museum of American Art',
       description: `Marilyn Pursued by Death features the Hollywood actress Marilyn Monroe in a black skirt, white shirt and black sunglasses hurriedly rushing as if in an attempt to move off the right side of the canvas on which she is painted. Behind her a man in black pants, white shirt, and black sunglasses pursues her. Both figures are outlined in red, which makes their figures stand out vibrantly against the black background.
       Drexler's depiction of Monroe is full of motion, a figure imbued with a sense of animation and vitality. Unlike other Pop artists who also used images of the famous actress as a subject, such as Andy Warhol, here the actress is not simply a two-dimensional subject. In this work, Drexler uses Monroe as a vehicle to implicitly make statements about the treatment of women in society. Despite her talent, Monroe was objectified by men and treated as a subject more than a person, as seen here as she is relentlessly pursued by a paparazzo, fan or admirer. Whilst the original photograph upon which this image is based shows that the man is in fact Monroe's bodyguard, Drexler's repurposing allows Monroe to become a representation of the objectification of women and their fight to rise above having their worth defined by just the male gaze.`,
