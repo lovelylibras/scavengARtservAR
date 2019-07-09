@@ -94,24 +94,6 @@ const seed = async () => {
       huntId: metropolitanHunt.id,
     },
     {
-      name: 'The Dance Class',
-      artist: 'Edgar Degas',
-      imageUrl:
-        'https://collectionapi.metmuseum.org/api/collection/v1/iiif/438817/796418/main-image',
-      museum: 'Metropolitan Museum of Art',
-      description: `This work and its variant in the Musée d'Orsay, Paris, represent the most ambitious paintings Degas devoted to the theme of the dance. Some twenty-four women, ballerinas and their mothers, wait while a dancer executes an "attitude" for her examination. Jules Perrot, a famous ballet master, conducts the class. The imaginary scene is set in a rehearsal room in the old Paris Opéra, which had recently burned to the ground. On the wall beside the mirror, a poster for Rossini’s Guillaume Tell pays tribute to the singer Jean-Baptiste Faure, who commissioned the picture and lent it to the 1876 Impressionist exhibition.`,
-      huntId: metropolitanHunt.id,
-    },
-    {
-      name: 'Aristotle with a Bust of Homer',
-      artist: 'Rembrandt (Rembrandt van Rijn)',
-      imageUrl:
-        'https://collectionapi.metmuseum.org/api/collection/v1/iiif/437394/1328682/main-image',
-      museum: 'Metropolitan Museum of Art',
-      description: `Among The Met’s most celebrated works of art, this painting conveys Rembrandt’s meditation on the meaning of fame. The richly clad Greek philosopher Aristotle (384–322 B.C.) rests his hand pensively on a bust of Homer, the epic poet who had attained literary immortality with his Iliad and Odyssey centuries before. Aristotle wears a gold medallion with a portrait of his powerful pupil, Alexander the Great; perhaps the philosopher is weighing his own worldly success against Homer’s timeless achievement. Although the work has come to be considered quintessentially Dutch, it was painted for a Sicilian patron at a moment when Rembrandt’s signature style, with its dark palette and almost sculptural buildup of paint, was beginning to fall out of fashion in Amsterdam.`,
-      huntId: metropolitanHunt.id,
-    },
-    {
       name: 'The Storm',
       artist: 'Pierre-Auguste Cot',
       imageUrl:
@@ -177,12 +159,30 @@ const seed = async () => {
       huntId: modernArtHunt.id,
     },
     {
-      name: `Homage to the Square: "Wait"`,
-      artist: 'Josef Albers',
+      name: `Baby`,
+      artist: 'Emma Amos',
       imageUrl:
-        'https://whitney.org/uploads/image/file/823026/large_2007_81_Albers.jpg',
+        'https://whitney.org/uploads/image/file/822364/xlarge_T.2018.88a-b_Amos.jpg',
       museum: 'Whitney Museum of American Art',
-      description: `This painting comes from Homage to the Square, a series Josef Albers developed from 1950 to 1976 that eventually encompassed more than one thousand separate artworks. Albers approached each of the Homages with meticulous consistency. He would select one of four set layouts, all of which were symmetrical and oriented toward the bottom edge. He then applied each color, in this work a range of oranges and reds, from the center out, using a knife to spread paint straight from the tube. Albers’s technique allowed him to use the same form to create vastly different experiences, and to explore the distinction between “physical fact and psychic effect.” Across the series, color combinations affect not only how we see individual hues but also how we perceive space and form, with some squares seeming to leap forward while others recede.`,
+      description: `In the early 1960s, Emma Amos began to create imagery that shifted fluidly between abstraction and representation. She was the youngest and only female member of Spiral—a New York–based collective founded by Charles Alston, Romare Bearden, Norman Lewis, and Hale Woodruff in 1963 to consider art’s relationship to civil rights. Amos resisted the idea of a singular Black aesthetic, which put her at odds with artists who insisted on direct, often figurative, depictions to address racial politics. As she later stated: “Every time I think about color it’s a political statement."`,
+      huntId: whitneyHunt.id,
+    },
+    {
+      name: `The Fourth of the Three`,
+      artist: 'Richard Anuszkiewicz',
+      imageUrl:
+        'https://whitney.org/uploads/image/file/822937/xlarge_64_4_Anuszkiewicz-CROP.jpg',
+      museum: 'Whitney Museum of American Art',
+      description: `Richard Anuszkiewicz, who studied with Josef Albers at Yale University from 1953 to 1955, composed this painting with only three colors. But the visual impact—as the title implies—opens beyond that simple arithmetic. Although working with relatively straightforward combinations of line and color, he created complex visual effects, including optical illusions, movement, and the impression of colors mixing. Here, a simple shift in a line’s width impacts the intensity of color and how depth and surface are read. Marcia Tucker, a curator who included Anuszkiewicz in her exhibition The Structure of Color at the Whitney in 1971, pointed out in the catalogue that the artist had once “remarked that one ‘test’ of a color painting might be whether or not the structure of the work is lost entirely in black and white.`,
+      huntId: whitneyHunt.id,
+    },
+    {
+      name: `Baptism in Kansas`,
+      artist: 'John Steuart Curry',
+      imageUrl:
+        'http://collectionimages.whitney.org/standard/167302/largepage.jpg',
+      museum: 'Whitney Museum of American Art',
+      description: `Baptism in Kansas recalls a scene that John Steuart Curry witnessed in 1915 in the devout religious community of his childhood: the local creeks were dried up, and the only suitable site for a full-submersion baptism was a water tank. In the painting, the circle of pious hymn singers, the row of Ford Model-T cars, and the receding prairie provide a counterpoint to the dynamic postures of the preacher and young woman at the moment they begin her submersion. Hovering above the pair, and suggesting a divine presence, is a raven and a dove, the birds that Noah released from the ark after the Flood. When the painting was first exhibited in 1928 at the Corcoran Gallery in Washington, D.C., critics hailed its assertive portrayal of rural American values, which marked a departure from the urban imagery and abstracted landscapes of contemporary American modernism. Curry’s vision of an idealized American heartland signaled the emergence of Regionalism, the movement that glorified grassroots rural values during the poverty-stricken years of the Great Depression.`,
       huntId: whitneyHunt.id,
     },
     {
@@ -192,6 +192,24 @@ const seed = async () => {
         'https://whitney.org/uploads/image/file/823034/large_image001.jpg',
       museum: 'Whitney Museum of American Art',
       description: `Marcia Hafif made this painting in Italy, where she lived for nearly eight years in the 1960s between college and graduate school. Her works from this period feature certain abstract forms that allude to landscapes, music, or the body. For example, she characterized a hill-like curve—which here appears twice and inverted—as “a compact shape, archetypal, referring to the cave, the house, the home, safety, endurance, intensity.” Hafif embraced an open-ended approach to abstraction that was grounded in observing the world, and the nature of painting itself.`,
+      huntId: whitneyHunt.id,
+    },
+    {
+      name: `Landscape`,
+      artist: 'Yasuo Kuniyoshi',
+      imageUrl:
+        'http://collectionimages.whitney.org/standard/160148/largepage.jpg',
+      museum: 'Whitney Museum of American Art',
+      description: `During the 1920s, Yasuo Kuniyoshi painted landscape compositions based on the rugged coastal setting of Ogunquit, Maine, where he spent his summers. Like contemporaneous works of this period, Landscape portrays its subject from a low viewpoint; its dream-like composition is marked by odd relationships of scale, such as the oversize prominence of the leaves in the foreground. Like Marsden Hartley, John Marin, and other American artists of this era, Kuniyoshi used a semi-abstracted modernist language to mine the personal qualities of the American landscape, transforming it into a vehicle for conveying mood and emotion.`,
+      huntId: whitneyHunt.id,
+    },
+    {
+      name: `Dam at Fort Peck, Montana`,
+      artist: 'Margaret Bourke-White',
+      imageUrl:
+        'http://collectionimages.whitney.org/standard/130237/largepage.jpg',
+      museum: 'Whitney Museum of American Art',
+      description: `Margaret Bourke-White’s photograph Dam at Fort Peck was reproduced on the cover of the inaugural issue of Life, published on November 23, 1936. Publisher Henry Luce had sent Bourke-White, one of four photojournalists originally hired by the magazine, to shoot a chain of dams being constructed on the Missouri River in northeast Montana under the Public Works Administration agency of President Franklin D. Roosevelt’s New Deal. Fort Peck was the highest of these and the world’s largest earth-filled dam. Bourke-White’s image reveals her ability to impart grace and majesty to the bleak, utilitarian forms of industrial architecture. The dam’s massive concrete spillway piers, which stretch to the edges of the image, evoke the soaring walls of ancient monuments, or crenellated castle towers. Bourke-White’s close cropping has them reaching the clouds and dwarfing a pair of human subjects. Luce’s choice of this photograph for his first cover was both canny and strategic: Dam at Fort Peck embodies a machine-age optimism that was likely well-received by a country hobbled by the Great Depression.`,
       huntId: whitneyHunt.id,
     },
   ];
@@ -237,6 +255,11 @@ const seed = async () => {
     {
       name: 'Madeline Emde',
       userName: 'MaddieEm',
+      password: '123',
+    },
+    {
+      name: 'Guest',
+      userName: 'guest',
       password: '123',
     },
   ];
