@@ -168,12 +168,12 @@ const seed = async () => {
       huntId: whitneyHunt.id,
     },
     {
-      name: `The Fourth of the Three`,
-      artist: 'Richard Anuszkiewicz',
+      name: `Gettin' Religion`,
+      artist: 'Archibald John Motley, Jr.',
       imageUrl:
-        'https://whitney.org/uploads/image/file/822937/xlarge_64_4_Anuszkiewicz-CROP.jpg',
+        'http://collectionimages.whitney.org/standard/224244/largerpage.jpg',
       museum: 'Whitney Museum of American Art',
-      description: `Richard Anuszkiewicz, who studied with Josef Albers at Yale University from 1953 to 1955, composed this painting with only three colors. But the visual impact—as the title implies—opens beyond that simple arithmetic. Although working with relatively straightforward combinations of line and color, he created complex visual effects, including optical illusions, movement, and the impression of colors mixing. Here, a simple shift in a line’s width impacts the intensity of color and how depth and surface are read. Marcia Tucker, a curator who included Anuszkiewicz in her exhibition The Structure of Color at the Whitney in 1971, pointed out in the catalogue that the artist had once “remarked that one ‘test’ of a color painting might be whether or not the structure of the work is lost entirely in black and white.`,
+      description: `Gettin’ Religion (1948), acquired by the Whitney in January, is the first work by Archibald Motley to become part of the Museum’s permanent collection. Motley was the subject of the retrospective exhibition Archibald Motley: Jazz Age Modernist, organized by the Nasher Museum at Duke University, which closed at the Whitney earlier this year. It was described as a “crucial acquisition” by curator and director of the collection Dana Miller.`,
       huntId: whitneyHunt.id,
     },
     {
