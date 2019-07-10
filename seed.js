@@ -50,13 +50,12 @@ const seed = async () => {
   ];
   const paintings = [
     {
-      name: 'Madame X',
-      artist: 'John Singer Sargent',
+      name: 'Ia Orana Maria (Hail Mary)',
+      artist: 'Paul Gauguin',
       imageUrl:
-        'https://collectionapi.metmuseum.org/api/collection/v1/iiif/12127/33591/restricted',
+        'https://collectionapi.metmuseum.org/api/collection/v1/iiif/438821/795924/main-image',
       museum: 'Metropolitan Museum of Art',
-      description:
-        'Madame Pierre Gautreau (the Louisiana-born Virginie Amélie Avegno; 1859–1915) was known in Paris for her artful appearance. Sargent hoped to enhance his reputation by painting and exhibiting her portrait. Working without a commission but with his sitter’s complicity, he emphasized her daring personal style, showing the right strap of her gown slipping from her shoulder. At the Salon of 1884, the portrait received more ridicule than praise. Sargent repainted the shoulder strap and kept the work for over thirty years. When, eventually, he sold it to the Metropolitan, he commented, “I suppose it is the best thing I have done,” but asked that the Museum disguise the sitter’s name.',
+      description: `Before embarking on a series of pictures inspired by Polynesian religious beliefs, Gauguin devoted this, his first major Tahitian canvas, to a Christian theme, describing it in a letter of March 1892: "An angel with yellow wings reveals Mary and Jesus, both Tahitians, to two Tahitian women, nudes dressed in pareus, a sort of cotton cloth printed with flowers that can be draped from the waist. Very somber, mountainous background and flowering trees . . . a dark violet path and an emerald green foreground, with bananas on the left. I'm rather happy with it." Gauguin based much of the composition on a photograph he owned of a bas-relief in the Javanese temple of Borobudur.`,
       huntId: metropolitanHunt.id,
     },
     {
@@ -79,7 +78,7 @@ const seed = async () => {
       huntId: metropolitanHunt.id,
     },
     {
-      name: 'Bridge over a Pond of Water Lilies',
+      name: 'Bridge Over a Pond of Water Lilies',
       artist: 'Claude Monet',
       imageUrl:
         'https://collectionapi.metmuseum.org/api/collection/v1/iiif/437127/796089/restricted',
@@ -173,12 +172,12 @@ const seed = async () => {
       huntId: whitneyHunt.id,
     },
     {
-      name: `Gettin' Religion`,
-      artist: 'Archibald John Motley, Jr.',
+      name: `Early Sunday Morning`,
+      artist: 'Edward Hopper',
       imageUrl:
-        'http://collectionimages.whitney.org/standard/224244/largerpage.jpg',
+        'http://collectionimages.whitney.org/standard/191760/largerpage.jpg',
       museum: 'Whitney Museum of American Art',
-      description: `Gettin’ Religion (1948), acquired by the Whitney in January, is the first work by Archibald Motley to become part of the Museum’s permanent collection. Motley was the subject of the retrospective exhibition Archibald Motley: Jazz Age Modernist, organized by the Nasher Museum at Duke University, which closed at the Whitney earlier this year. It was described as a “crucial acquisition” by curator and director of the collection Dana Miller.`,
+      description: `Early Sunday Morning is one of Edward Hopper’s most iconic paintings. Although he described this work as "almost a literal translation of Seventh Avenue," Hopper reduced the New York City street to bare essentials. The lettering in the window signs is illegible, architectural ornament is loosely sketched, and human presence is merely suggested by the various curtains differentiating discrete apartments. The long, early morning shadows in the painting would never appear on a north-south street such as Seventh Avenue. Yet these very contrasts of light and shadow, and the succession of verticals and horizontals, create the charged, almost theatrical, atmosphere of empty buildings on an unpopulated street at the beginning of the day. Although Hopper is known as a quintessential twentieth-century American realist, and his paintings are fundamentally representational, this work demonstrates his emphasis on simplified forms, painterly surfaces, and studiously constructed compositions.`,
       huntId: whitneyHunt.id,
     },
     {
