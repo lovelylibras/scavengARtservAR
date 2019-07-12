@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const db = require('../database');
 const crypto = require('crypto');
 
-const Teachers = db.define('teacher', {
+const Users = db.define('user', {
   name: {
     type: Sequelize.STRING,
     allowNull: false,
@@ -32,20 +32,18 @@ const Teachers = db.define('teacher', {
   },
 });
 
-Teachers.prototype.correctPassword = function(candidatePwd) {
-  return (
-    Teachers.encryptPassword(candidatePwd, this.salt()) === this.password()
-  );
+Users.prototype.correctPassword = function(candidatePwd) {
+  return Users.encryptPassword(candidatePwd, this.salt()) === this.password();
 };
 
 /**
  * classMethods
  */
-Teachers.generateSalt = function() {
+Users.generateSalt = function() {
   return crypto.randomBytes(16).toString('base64');
 };
 
-Teachers.encryptPassword = function(plainText, salt) {
+Users.encryptPassword = function(plainText, salt) {
   return crypto
     .createHash('RSA-SHA256')
     .update(plainText)
@@ -58,18 +56,18 @@ Teachers.encryptPassword = function(plainText, salt) {
  */
 const setSaltAndPassword = teacher => {
   if (teacher.changed('password')) {
-    teacher.salt = Teachers.generateSalt();
-    teacher.password = Teachers.encryptPassword(
+    teacher.salt = Users.generateSalt();
+    teacher.password = Users.encryptPassword(
       teacher.password(),
       teacher.salt()
     );
   }
 };
 
-Teachers.beforeCreate(setSaltAndPassword);
-Teachers.beforeUpdate(setSaltAndPassword);
-Teachers.beforeBulkCreate(teachers => {
+Users.beforeCreate(setSaltAndPassword);
+Users.beforeUpdate(setSaltAndPassword);
+Users.beforeBulkCreate(teachers => {
   teachers.forEach(setSaltAndPassword);
 });
 
-module.exports = Teachers;
+module.exports = Users;

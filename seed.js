@@ -2,7 +2,7 @@ const {
   db,
   Hunts,
   Paintings,
-  Teachers,
+  Users,
   Students,
   Museums,
 } = require('./server/db');
@@ -218,7 +218,7 @@ const seed = async () => {
       huntId: whitneyHunt.id,
     },
   ];
-  const teachers = [
+  const users = [
     {
       name: 'Jess Bracht',
       userName: 'jess@GH.com',
@@ -279,8 +279,8 @@ const seed = async () => {
     students.map(student => {
       return Students.create(student);
     }),
-    teachers.map(teacher => {
-      return Teachers.create(teacher);
+    users.map(user => {
+      return Users.create(user);
     })
   );
 

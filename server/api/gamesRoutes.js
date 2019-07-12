@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Games, Classrooms } = require('../db');
+const { Games, Users, Hunts, Paintings } = require('../db');
 
 router.get('/', async (req, res, next) => {
   try {
@@ -14,10 +14,15 @@ router.get('/', async (req, res, next) => {
   }
 });
 
-router.get('/:classroomId', async (req, res, next) => {
+//find a user's games
+router.get('/:userId', async (req, res, next) => {
   try {
     const games = await Games.findAll({
-      where: { classroomId: req.params.classroomId },
+      where: { userId: req.params.userId },
+      include: {
+        model: Hunts,
+        include: [{ model: Paintings }],
+      },
     });
     if (games) {
       res.json(games);
@@ -29,23 +34,13 @@ router.get('/:classroomId', async (req, res, next) => {
   }
 });
 
-router.post('/:classroomId/:huntId', async (req, res, next) => {
+//create new game
+router.post('/:userId/:huntId', async (req, res, next) => {
   try {
-    const classroom = await Classrooms.findOne({
-      where: { id: req.params.classroomId },
-    });
-    if (classroom) {
-      classroom.addHunt(req.params.huntId);
-      const newGame = await Games.findOne({
-        where: {
-          classroomId: req.params.classroomId,
-          huntId: req.params.huntId,
-        },
-      });
-      res.json(newGame);
-    } else {
-      next();
-    }
+    const newGame = await Games.create(req.body);
+    newGame.setUser(req.params.userId);
+    newGame.setHunt(req.params.huntId);
+    res.json(newGame);
   } catch (error) {
     next(error);
   }
