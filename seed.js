@@ -221,32 +221,32 @@ const seed = async () => {
   const users = [
     {
       name: 'Jess Bracht',
-      userName: 'jess@GH.com',
+      userName: 'jess@gh.com',
       password: '123',
     },
     {
       name: 'Dan Sohval',
-      userName: 'dan@GH.com',
+      userName: 'dan@gh.com',
+      password: '123',
+    },
+    {
+      name: 'Rachel Reinauer',
+      userName: 'rayray@gh.com',
+      password: '123',
+    },
+    {
+      name: 'Ahsun Kim',
+      userName: 'AK1@gh.com',
+      password: '123',
+    },
+    {
+      name: 'Audra Kenney',
+      userName: 'AK2@gh.com',
       password: '123',
     },
   ];
 
   const students = [
-    {
-      name: 'Rachel Reinauer',
-      userName: 'rayray',
-      password: '123',
-    },
-    {
-      name: 'Ahsun Kim',
-      userName: 'AK1',
-      password: '123',
-    },
-    {
-      name: 'Audra Kenney',
-      userName: 'AK2',
-      password: '123',
-    },
     {
       name: 'Talia Fayaz',
       userName: 'Shirline',

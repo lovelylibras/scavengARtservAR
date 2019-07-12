@@ -1,16 +1,16 @@
 const router = require('express').Router();
-const { Teachers, Students } = require('../db');
+const { Users, Students } = require('../db');
 module.exports = router;
 
 router.get('/', async (req, res, next) => {
-  const teachers = await Teachers.findAll();
+  const teachers = await Users.findAll();
   console.log(teachers);
   res.json(teachers);
 });
 
 router.post('/teacher-login', async (req, res, next) => {
   try {
-    const user = await Teachers.findOne({
+    const user = await Users.findOne({
       where: { userName: req.body.userName },
     });
     if (!user) {
